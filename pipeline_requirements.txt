@@ -1,0 +1,34 @@
+# SiMPull Analysis Pipeline — Python dependencies
+# Python 3.11+ required (uses match/case and type union syntax)
+#
+# Install with:  pip install -r requirements.txt
+#
+# PyTorch (torch) installation varies by platform — see note below.
+# Install all other packages first, then install torch separately.
+
+numpy
+pandas
+tifffile
+scikit-image
+scipy
+matplotlib
+ruptures
+scikit-learn
+
+# PyTorch — install separately using the command for your platform:
+#
+#   Mac (Apple Silicon, MPS):
+#     pip install torch torchvision
+#
+#   Windows / Linux (CPU only):
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+#   Windows / Linux (NVIDIA GPU):
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# tkinter is part of the Python standard library.
+# On Linux it may need separate installation:  sudo apt install python3-tk
+# On Windows and Mac it is included with Python.
+#
+# FIJI/ImageJ must be installed separately from https://fiji.sc
+# See setup instructions for configuring the FIJI path.
